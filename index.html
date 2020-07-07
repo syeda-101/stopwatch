@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Stopwatch</title>
+        <meta name="viewport", content="width=device-width, initial-scale=1.0, user-scalable=yes">
+        
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css" type="text/css">
+        <link rel="stylesheet" href="css/bootstrap-reboot.min.css" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <center>
+                <div>
+                    <p class="heading">Stopwatch</p>
+                </div>
+                <br/>
+                
+                <div class="header">
+                    <div class=tit>
+                        <h6 class="title">Hours</h6>
+                        <h6 class="titlee">Mins</h6>
+                        <h6 class="titleee">Secs</h6>
+                    </div>
+                    <div class="num">
+                        <h1 id="hr">00</h1>
+                        <h2>:</h2>
+                        <h1 id="min">00</h1>
+                        <h2>:</h2>
+                        <h1 id="sec">00</h1>
+                        <h2>:</h2>
+                        <h1 id="msec">00</h1>
+                    </div>
+                    <br/>
+                    <div>
+                        <button type="button" class="btn btn-success" id="myBtn" onclick="start()">Start</button>
+
+                        <button type="button" class="btn btn-danger" onclick="stop()">Stop</button>
+                        <button type="button" class="btn btn-secondary" onclick="reset()">Reset</button>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <!-- Optional JS-->
+        <!-- JQuery, Popper js, Bootstrap Js-->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <!-- a js file conytains popper functions-->
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script> 
+        <script src="app.js"></script>
+    </body>
+</html>
